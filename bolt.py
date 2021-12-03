@@ -42,8 +42,8 @@ class Bolt:
             if(temp == " "):
                 i+=1
             elif i == sorszam:
-                Termekek+=f"{temp}\n"
-        print(f"A kosár tartalma: {Termekek}\n")
+                Termekek+=f"\n{temp}"
+        print(f"A kosár tartalma:{Termekek}")
 
 
     def feladat_4(lista:list) -> None:
