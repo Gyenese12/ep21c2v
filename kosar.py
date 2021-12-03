@@ -43,6 +43,7 @@ class Kosar:
         """
         pass
 
+
     def kosar_tartalmanak_kiiratasa(self) -> None:
         """
         Kiírja a kosár tartalmát a konzolra.

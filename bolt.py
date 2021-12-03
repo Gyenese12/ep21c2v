@@ -6,6 +6,7 @@ class Bolt:
     A vásárlásokat kezelő osztály. Az osztály egyetlen attribútuma a kosarak listája.
     """
 
+
     def __init__(self,kosar: str):
         self.kosar = kosar
 
