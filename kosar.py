@@ -8,9 +8,6 @@ class Kosar:
     """
 
     def __init__(self, termekek: dict[str, int]) -> None:
-        """
-        A kosár létrehozásakor beállítja az osztály attribútumait.
-        """
         pass
 
     def osszeg_lekerdezese(self) -> int:
