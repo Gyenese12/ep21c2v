@@ -1,12 +1,4 @@
-
-
-
 class Bolt:
-    """
-    A vásárlásokat kezelő osztály. Az osztály egyetlen attribútuma a kosarak listája.
-    """
-
-
     def __init__(self,kosar: str):
         self.kosar = kosar
 
@@ -126,8 +118,8 @@ class Bolt:
                 for k in vasarlas:
                     if k == 0 : osszes += 0
                     if k == 1 : osszes += osszeg1
-                    if k == 2 : osszes += osszeg2*2
-                    if k >= 3 : osszes += osszeg3*k
+                    if k == 2 : osszes += osszeg2 + osszeg1
+                    if k >= 3 : osszes += osszeg1 + osszeg2 + osszeg3 + (k-3)*osszeg3
                 file.write(f"{str(osszes)}\n")
                 osszes = 0
                 vasarlas.clear()
